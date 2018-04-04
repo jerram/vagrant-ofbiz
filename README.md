@@ -12,7 +12,7 @@ vagrant plugin install vagrant-hostmanager vagrant-cachier vagrant-vbguest vagra
 vagrant up
 ```
 
-open https://ofbiz.local:8443/ordermgr/control/main
+open https://ofbiz.local:8443/webtools
 
 - USERNAME:- admin
 - PASSWWORD:- ofbiz

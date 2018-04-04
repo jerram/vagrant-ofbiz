@@ -43,6 +43,6 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "shell", path: "provision/ofbiz.sh",   privileged: false
-  config.vm.provision "shell", inline: "cd apache-ofbiz-16.11.04 && ./gradlew 'ofbizBackground --start', run: "always"
+  config.vm.provision "shell", inline: "cd apache-ofbiz-16.11.04 && ./gradlew 'ofbizBackground --start'", run: "always"
 
 end
