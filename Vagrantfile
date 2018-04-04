@@ -42,9 +42,7 @@ Vagrant.configure(2) do |config|
     }
   end
 
-  # config.vm.provision "shell", path: "provision/ofbiz.sh",   privileged: false
-  # config.vm.provision "shell", inline: "Local server address is http://" + ENV['HOSTNAME'], run: "always"
-  # config.vm.provision "shell", inline: "Local server IP is http://" + IP, run: "always"
-  # config.vm.provision "shell", inline: "service apache2 restart", run: "always"
+  config.vm.provision "shell", path: "provision/ofbiz.sh",   privileged: false
+  config.vm.provision "shell", inline: "cd apache-ofbiz-16.11.04 && ./gradlew 'ofbizBackground --start', run: "always"
 
 end

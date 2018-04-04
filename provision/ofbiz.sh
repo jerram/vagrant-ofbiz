@@ -24,5 +24,4 @@ wget http://mirror.dsrg.utoronto.ca/apache/ofbiz/apache-ofbiz-16.11.04.zip
 unzip apache-ofbiz-16.11.04.zip
 cd apache-ofbiz-16.11.04
 time ./gradlew cleanAll loadDefault
-time ./gradlew ofbiz
 echo "open https://${HOSTNAME}:8443/ordermgr/control/main"
